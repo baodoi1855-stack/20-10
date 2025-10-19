@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng 20/10 Hẹ Hẹ ! ✨</title>
+    
+    <style>
+        /* Defining the custom font */
+        @font-face {
+            font-family: 'SJ Pancake Pen';
+            src: url('SJ_Pancake_Pen.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* CSS for styling the webpage */
+        body {
+            /* Cute gradient background (light pink to light yellow) */
+            background: linear-gradient(135deg, #ffebee 0%, #fffde7 100%);
+            /* Applying the custom font */
+            font-family: 'SJ Pancake Pen', cursive; 
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden; 
+        }
+
+        .container {
+            /* Container for the greeting */
+            background-color: #ffffff;
+            border-radius: 30px; /* Rounded corners */
+            border: 5px dashed #ff80ab; /* Cute dashed border */
+            box-shadow: 0 10px 30px rgba(255, 128, 171, 0.5); /* Soft pink shadow */
+            padding: 40px 60px;
+            max-width: 550px;
+            width: 90%;
+            /* Bounce-in animation on page load */
+            animation: bounceIn 1s ease-out; 
+            position: relative; 
+            z-index: 10;
+        }
+
+        h1 {
+            /* Styling the heading */
+            color: #e91e63; /* Bright pink color */
+            font-size: 3.5em; /* Larger size */
+            margin-bottom: 15px;
+            text-shadow: 3px 3px #f8bbd0; /* Cute text shadow */
+            line-height: 1.2;
+        }
+
+        p {
+            /* Styling paragraphs */
+            color: #5d4037; /* Gentle brown color */
+            font-size: 1.4em;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .icon-group {
+            /* Styling icon groups */
+            color: #ff4081;
+            font-size: 2.5em;
+            margin: 20px 0;
+            display: block;
+            /* Heartbeat animation */
+            animation: heartBeat 1.5s infinite; 
+        }
+
+        /* ANIMATION KEYFRAMES */
+        
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            70% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); } /* Makes heart pulse */
+        }
+
+        /* FALLING FLOWER EFFECT */
+        .flower {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #ffcdd2; /* Light pink petal color */
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0.8;
+            animation: fall linear infinite;
+            /* Box-shadow to create a simple petal shape */
+            box-shadow: 5px 0 #f48fb1, -5px 0 #f8bbd0, 0 5px #e57373, 0 -5px #ffcdd2; 
+            z-index: 5;
+        }
+
+        /* Positioning and timing for 10 falling petals */
+        .flower:nth-child(1) { left: 10%; animation-duration: 10s; animation-delay: 0s; }
+        .flower:nth-child(2) { left: 20%; animation-duration: 8s; animation-delay: 2s; }
+        .flower:nth-child(3) { left: 35%; animation-duration: 12s; animation-delay: 1s; }
+        .flower:nth-child(4) { left: 50%; animation-duration: 9s; animation-delay: 4s; }
+        .flower:nth-child(5) { left: 65%; animation-duration: 11s; animation-delay: 3s; }
+        .flower:nth-child(6) { left: 80%; animation-duration: 7s; animation-delay: 5s; }
+        .flower:nth-child(7) { left: 5%; animation-duration: 13s; animation-delay: 6s; }
+        .flower:nth-child(8) { left: 45%; animation-duration: 9.5s; animation-delay: 0.5s; }
+        .flower:nth-child(9) { left: 90%; animation-duration: 10.5s; animation-delay: 2.5s; }
+        .flower:nth-child(10) { left: 75%; animation-duration: 8.5s; animation-delay: 4.5s; }
+
+        @keyframes fall {
+            0% { transform: translateY(-100px) rotate(0deg); opacity: 0.8; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+    <div class="flower"></div>
+
+    <div class="container">
+        <h1>💐 Chúc Mừng 20/10 💐</h1>
+        <p class="icon-group">💖 Các bn nữ tronh nhóm 💖</p>
+        <p>
+            Gửi những lời chúc yêu thương nhất đến các bạn nữ. 
+            Chúc các bạn luôn Xinh Đẹp, Dễ Thương và Luôn Luôn may mắn 🍀🍀🍀🍀 !
+        </p>
+        <p>
+            Mong Các bạn ko đòi quà t chứ t ko có quà, hẹ hẹ hẹ!
+        </p>
+        <p class="icon-group">✨ DitMeMay ✨</p>
+    </div>
+
+</body>
+</html>
